@@ -134,26 +134,22 @@
   block-size: 9px;
 }
 
-.header::before,
-.footer::before,
-.header::after,
-.footer::after {
+.corner::before,
+.corner::after {
   content: "";
   position: absolute;
   inline-size: 25px;
   block-size: 25px;
 }
 
-.header::before,
-.footer::before {
+.corner::before {
   border-inline-end: 1px solid var(--decorative-item);
   border-block-start: 1px solid var(--decorative-item);
   inset-block-start: 10px;
   inset-inline-end: 10px;
 }
 
-.header::after,
-.footer::after {
+.corner::after {
   border-inline-start: 1px solid var(--decorative-item);
   border-block-end: 1px solid var(--decorative-item);
   inset-block-end: 10px;
